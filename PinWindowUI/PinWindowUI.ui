@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PinWindowUIClass</class>
+ <widget class="QMainWindow" name="PinWindowUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>762</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>762</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>762</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PinWindowUI</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>30</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>标题：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pID">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="style">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="log">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>300</y>
+      <width>321</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QTextEdit::LineWrapMode::WidgetWidth</enum>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大小：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>窗口段：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>进程ID：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>10</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>ZBID_DESKTOP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_BACKGROUND</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_INACTIVEMOBODY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_NOTIFICATION</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_APPCHROME</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_MOGO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_EDGY</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_SYSTEM_TOOLS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_LOCK</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_ABOVELOCK_UX</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_IMMERSIVE_IHM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_GENUINE_WINDOWS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZBID_UIACCESS</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>20</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>句柄：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>280</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>日志</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="HWND">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="title">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类：</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>80</y>
+      <width>321</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="plainText">
+     <string>ZBID_DESKTOP：普通程序所在窗口段
+ZBID_IMMERSIVE_MOGO：开始屏幕和任务栏
+ZBID_IMMERSIVE_NOTIFICATIONS：操作中心和通知
+ZBID_SYSTEM_TOOLS：Alt+Tab视图，任务管理器
+ZBID_ABOVELOCK_UX：即时播放
+ZBID_IMMERSIVE_SEARCH：Cortana和搜索
+ZBID_IMMERSIVE_INACTIVEMOBODY：UWP CompactOverlay
+ZBID_IMMERSIVE_APPCHROME：任务视图
+ZBID_GENUINE_WINDOWS：“激活Windows”</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>90</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>样式：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wclass">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>260</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设置窗口段</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rect">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>进程名：</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>401</width>
+      <height>241</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>40</y>
+      <width>54</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Z序段：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>40</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>HWND_BOTTOM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HWND_TOP</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HWND_NOTOPMOST</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HWND_TOPMOST</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="zbid">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>150</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>窗口段：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>354</x>
+      <y>160</y>
+      <width>51</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>刷新</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="PinWindowUI.qrc"/>
+ </resources>
+ <connections/>
+</ui>
